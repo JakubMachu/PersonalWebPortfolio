@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Jakub Machu</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script
+      src="https://kit.fontawesome.com/d3c19c9581.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav id="navbar">
+          <img src="images/logo1.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Aspiring automation tester</p>
+          <h1>
+            Hi, I'm <span>Jakub</span> Machu<br />
+            From Czechia!
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------ABOUT SECTION------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profilovka1.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+
+            <p>
+              I am a former chef who embarked on a new journey into the world of Information Technology (IT) 
+              after a fulfilling tenure as the head chef at the renowned
+              <a
+                href="https://www.fjordnorway.com/en/eat-and-sleep/trollstigen-cafe"
+                target="_blank"
+                class="trollstigen"
+                >Trollstigen Café</a> in Norway. 
+              </p>
+
+              <p>
+                I successfully completed a comprehensive retraining program at the Software Development Academy (SDA), 
+                where my focus was on <b>Java</b> programming.
+                The course covered a wide range of topics, including
+                <b> Java Script, HTML, CSS, MySQL, JDBC, Hibernate, Angular and Spring framework.</b>
+              </p> 
+
+              <p>
+                During the course, I had the opportunity to explore various aspects of IT, and I seized the chance to embark on a new career path. 
+                I successfully transitioned into a role as an automation tester, with a primary focus on enhancing the accessibility of web applications. 
+                I utilize <b>C# and Selenium</b> to ensure that digital experiences are inclusive and user-friendly for all.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Object Oriented Programming</span><br />Java, C#</li>
+                <li><span>Web Development</span><br />Java Script, HTML, CSS</li>
+                <li><span>A11Y</span><br />Accecssibility testing</li>
+                <li><span>QA</span><br />Quality assurance - automation/manual testing</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - 2023</span><br/>Java, Java Script, HTML, CSS,
+                  SQL, JDBC, Hibernate, Angular and Spring at:
+                  <a href="https://sdacademy.cz/" target="_blank" class="sda"
+                    >Software Development Academy</a>
+                </li>
+                <li>
+                  <span>2022 - 2023</span><br/>Java at Udemy platform by:
+                  <a
+                    href="https://www.udemy.com/course/java-the-complete-java-developer-course/"
+                    target="_blank"
+                    class="timbuchalka"
+                    >Tim Buchalka</a>
+                </li>
+                <li>
+                  <span>2022 - 2023</span><br/>HTML & CSS at Udemy platform
+                  by:
+                  <a
+                    href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+                    target="_blank"
+                    class="jonasschmedtmann"
+                    >Jonas Schmedtmann</a>
+                </li>
+                <li>
+                  <span>01.01.2023 - Current</span><br />Accessibility (Screen readers - NVDA, JAWS, colour contrast, WCAG 2
+                  Level AA Conformance), Atomic design, HTML - ARIA attributes, C#, Selenium, XPath, Visual Studio Enterprise, Azure DevOps at:
+                  <a
+                    href="https://www.ciklum.com/we"
+                    target="_blank"
+                    class="ciklum"
+                    >Ciklum Western Europe</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>May. 2014</span><br />University of Hotel and Tourism,
+                  Graduation Certificate in:
+                  <a
+                    href="https://skolabaltaci.cz/hotelnictvi/"
+                    target="_blank"
+                    class="hospitality"
+                    >65-42-M/01 Hospitality</a
+                  >
+                </li>
+                <li>
+                  <span>26.06.2022 - 20.05.2023</span><br />JAVA from Scratch,
+                  Software Development Academy:
+                  <a
+                    href="https://app.diplomasafe.com/en-US/diploma/def1c4e53e6ad7e2a5e2610f9599c9f5d463024c6"
+                    target="_blank"
+                    class="sda-certification"
+                    >NO.:CZ09863427</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------SERVICES SECTION------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Accessibility</h2>
+            <p>Do you need help with accessibility - web/app?</p>
+            <a href="https://www.w3.org/mission/accessibility/" target="_blank">Click here to learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>C# App</h2>
+            <p>Do you need help with your bussiness problems and automatize tasks
+              using algorithms?</p>
+            <a href="https://learn.microsoft.com/en-us/visualstudio/ide/create-csharp-winform-visual-studio?view=vs-2022" target="_blank">Click here to learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Quality assurance</h2>
+            <p>
+              Do you need help to test your product? Automation/manual testing
+            </p>
+            <a href="https://www.techtarget.com/searchsoftwarequality/definition/quality-assurance" target="_blank">Click here to learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------PORTFOLIO SECTION------------- -->
+    <div id="porfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Folder Synchronization Application</h3>
+              <p>
+                The Folder Synchronization Application is a C# program that periodically synchronizes the content of a source folder with a replica folder. 
+                It ensures that the replica folder maintains an identical copy of the source folder.
+              </p>
+              <a href="https://github.com/JakubMachu/FolderSynchronizer" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Automation testing</h3>
+              <p>
+                Basic showcase of Selenium WebDriver test automation.
+              </p>
+              <a href="https://github.com/JakubMachu/LiptonTestSuite" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Postman testing</h3>
+              <p>
+              API testing using Postman.
+              </p>
+              <a href="https://github.com/JakubMachu/Postman_Project_gorest.co.in" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Home</a>
+      </div>
+    </div>
+<!-- -------------VIDEO SECTION------------- -->
+    <div class="video">
+      <h3>A11Y Testing of web applications</h3>
+      <iframe src="https://drive.google.com/file/d/1GvipvGX377yoBN2Qff8cN-4fHSCPCwXb/preview" 
+      width="600" height="450" frameborder="10" allowfullscreen="true"></iframe>
+      </div>
+    <!-- -------------CONTACT SECTION------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> jacubmachu@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +420 xxx xxx xxx</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/jakub-machu-61756a194"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.facebook.com/jakub.machu.90/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/JakubMachu" target="_blank"
+                ><i class="fa-brands fa-square-gitlab"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/jacub.machu/?hl=cs"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="images/Jakub's Resume.pdf" download class="btn btn2"
+              >Download my CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form 
+            name="contactForm"
+            id="contactForm"
+            action="/submit" 
+            method="post">
+              <input 
+              id="name"
+              type="text" 
+              name="Name" 
+              placeholder="Your Name" 
+              required 
+              />
+              <input
+                id="email"
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="message"
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required>
+              </textarea>
+              <button 
+              type="submit" 
+              class="btn btn2">
+              Submit
+            </button>
+            </form>
+            <span id="msg">
+              Message sent!
+            </span>
+          </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      var lastScrollTop = 0;
+
+      window.addEventListener(
+        "scroll",
+        function () {
+          var st = window.pageYOffset || document.documentElement.scrollTop;
+          if (st > lastScrollTop) {
+            document.getElementById("sidemenu").style.right = "-100%";
+          } else {
+            document.getElementById("sidemenu").style.right = "0";
+          }
+          lastScrollTop = st;
+        },
+        false
+      );
+    </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", function (event) {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("All fields are required");
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+  </body>
+</html>
