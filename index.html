@@ -27,7 +27,7 @@
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Aspiring automation tester</p>
+          <p>Automation tester</p>
           <h1>
             Hi, I'm <span>Jakub</span> Machu<br />
             From Czechia!
@@ -44,30 +44,26 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-
             <p>
-              I am a former chef who embarked on a new journey into the world of Information Technology (IT) 
+              I am a former chef who embarked on a new journey into the world of Information Technology
               after a fulfilling tenure as the head chef at the renowned
-              <a
-                href="https://www.fjordnorway.com/en/eat-and-sleep/trollstigen-cafe"
-                target="_blank"
-                class="trollstigen"
-                >Trollstigen Café</a> in Norway. 
-              </p>
-
-              <p>
-                I successfully completed a comprehensive retraining program at the Software Development Academy (SDA), 
-                where my focus was on <b>Java</b> programming.
-                The course covered a wide range of topics, including
-                <b> Java Script, HTML, CSS, MySQL, JDBC, Hibernate, Angular and Spring framework.</b>
-              </p> 
-
-              <p>
-                During the course, I had the opportunity to explore various aspects of IT, and I seized the chance to embark on a new career path. 
-                I successfully transitioned into a role as an automation tester, with a primary focus on enhancing the accessibility of web applications. 
-                I utilize <b>C# and Selenium</b> to ensure that digital experiences are inclusive and user-friendly for all.
+              <a href="https://www.fjordnorway.com/en/eat-and-sleep/trollstigen-cafe" target="_blank" class="trollstigen">Trollstigen Café</a> in Norway. 
             </p>
-
+            <br>
+            <p>
+              I successfully completed a comprehensive retraining program at the <a href="https://sdacademy.cz/" target="_blank" class="sda"
+              >Software Development Academy</a>, where my focus was on <b>Java</b> programming.
+              The course covered a wide range of topics, including
+              <b> Java Script, HTML, CSS, MySQL, JDBC, Hibernate, Angular and Spring framework.</b>
+            </p>
+            <br>
+            <p>
+              During the course, I had the opportunity to explore various aspects of IT, and I seized the chance to embark on a new career path. 
+              I successfully transitioned into a role as an automation tester at <a href="https://www.ciklum.com/we" target="_blank" class="ciklum" 
+              >Ciklum Western Europe</a> with a primary focus on enhancing the accessibility of web applications. 
+              I utilize <b>C# and Selenium</b> to ensure that digital experiences are inclusive and user-friendly for all.
+            </p>
+            
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
                 Skills
@@ -79,10 +75,11 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>Object Oriented Programming</span><br />Java, C#</li>
-                <li><span>Web Development</span><br />Java Script, HTML, CSS</li>
-                <li><span>A11Y</span><br />Accecssibility testing</li>
-                <li><span>QA</span><br />Quality assurance - automation/manual testing</li>
+                <li><span>Programming</span><br />C#, HTML, CSS</li>
+                <li><span>Testing</span><br />Selenium</li>
+                <li><span>Accecssibility testing</span><br/>Screen-Readers, ARIA attributes, Schemantic HTML, Color contrast</li>
+                <li><span>Other skills</span><br />Azure DevOps, Agile, Scrum</li>
+                
               </ul>
             </div>
             <div class="tab-contents" id="experience">
@@ -297,62 +294,61 @@
               Message sent!
             </span>
           </div>
-
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-    <script>
-      var lastScrollTop = 0;
-
-      window.addEventListener(
-        "scroll",
-        function () {
-          var st = window.pageYOffset || document.documentElement.scrollTop;
-          if (st > lastScrollTop) {
-            document.getElementById("sidemenu").style.right = "-100%";
-          } else {
-            document.getElementById("sidemenu").style.right = "0";
-          }
-          lastScrollTop = st;
-        },
-        false
-      );
-    </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var form = document.getElementById("contactForm");
-
-        form.addEventListener("submit", function (event) {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
-            if (name === "" || email === "" || message === "") {
-                alert("All fields are required");
-                event.preventDefault();
+          <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+              for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+              }
+              for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
             }
-        });
-    });
-</script>
+          </script>
+          <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+              sidemenu.style.right = "0";
+            }
+            function closemenu() {
+              sidemenu.style.right = "-200px";
+            }
+          </script>
+          <script>
+            var lastScrollTop = 0;
+      
+            window.addEventListener(
+              "scroll",
+              function () {
+                var st = window.pageYOffset || document.documentElement.scrollTop;
+                if (st > lastScrollTop) {
+                  document.getElementById("sidemenu").style.right = "-100%";
+                } else {
+                  document.getElementById("sidemenu").style.right = "0";
+                }
+                lastScrollTop = st;
+              },
+              false
+            );
+          </script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              var form = document.getElementById("contactForm");
+      
+              form.addEventListener("submit", function (event) {
+                  var name = document.getElementById("name").value;
+                  var email = document.getElementById("email").value;
+                  var message = document.getElementById("message").value;
+      
+                  if (name === "" || email === "" || message === "") {
+                      alert("All fields are required");
+                      event.preventDefault();
+                  }
+              });
+          });
+      </script>
   </body>
 </html>
